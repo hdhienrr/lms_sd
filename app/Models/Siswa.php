@@ -11,7 +11,6 @@ class Siswa extends Model
     'nama',
     'kelas',
 ];
-    // --- TAMBAHKAN FUNGSI INI ---
     public function nilai()
     {
         // Artinya: Satu Siswa punya banyak Nilai

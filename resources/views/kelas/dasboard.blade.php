@@ -41,7 +41,7 @@
             <h5 class="text-lg font-bold text-gray-800">Daftar Siswa</h5>
             
             <a href="{{ route('siswa.create', $id_kelas) }}" 
-               class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-md transition-all flex items-center">
+               class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-md transition-all flex items-center">
                 <i class="fas fa-plus mr-2"></i> Tambah Siswa
             </a>
         </div>
@@ -55,7 +55,7 @@
                         <i class="fas fa-user-slash text-gray-300 text-3xl"></i>
                     </div>
                     <p class="text-gray-500 font-medium mb-4">Belum ada data siswa di kelas ini.</p>
-                    <a href="{{ route('siswa.create', $id_kelas) }}" class="text-blue-600 font-semibold hover:underline">
+                    <a href="{{ route('siswa.create', $id_kelas) }}" class="text-purple-600 font-semibold hover:underline">
                         Tambah Siswa Sekarang &rarr;
                     </a>
                 </div>

@@ -19,7 +19,7 @@
 </head>
 <body class="flex flex-col min-h-screen">
 
-    <nav class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <nav class="bg-purple-500 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <div class="bg-white/20 p-2 rounded-lg">
@@ -34,7 +34,7 @@
             <div class="flex items-center gap-4">
                 @auth
                     <div class="hidden md:flex items-center bg-blue-700/50 px-4 py-2 rounded-full gap-3">
-                        <div class="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center text-blue-900 font-bold">
+                        <div class="bg-gray-400 w-8 h-8 rounded-full flex items-center justify-center text-blue-900 font-bold">
                             <i class="fa-solid fa-user"></i>
                         </div>
                         <div class="text-sm text-right">

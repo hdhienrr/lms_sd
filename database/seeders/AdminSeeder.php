@@ -13,14 +13,16 @@ class AdminSeeder extends Seeder
      */
     public function run(): void
     {
-        // Membuat 1 akun Admin Utama
-        User::create([
-            'name' => 'Hadhie',
-            'email' => 'hadhie@sekolah.id',
-            'password' => Hash::make('hadhieganteng'), 
-            'role' => 'admin',
-        ]);
-        
-        // Jika ingin menambah admin lain, bisa tambahkan di sini
+        User::updateOrCreate(
+            // Kondisi pencarian (UNIQUE)
+            ['email' => 'hadhie@sekolah.id'],
+
+            // Data yang diisi / diupdate
+            [
+                'name' => 'Hadhie',
+                'password' => Hash::make('hadhieganteng'),
+                'role' => 'admin',
+            ]
+        );
     }
 }

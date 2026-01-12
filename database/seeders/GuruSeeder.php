@@ -13,21 +13,22 @@ class GuruSeeder extends Seeder
      */
     public function run(): void
     {
-        // Guru 1 (Sesuai Gambar User Login)
-        User::create([
-            'name' => 'Budi Utomo',
-            'email' => 'Budi@sekolah.id',
-            'password' => Hash::make('1234'),
-            'role' => 'guru',
-        ]);
+        User::updateOrCreate(
+            ['email' => 'budi@sekolah.id'],
+            [
+                'name' => 'Budi Utomo',
+                'password' => Hash::make('1234'),
+                'role' => 'guru',
+            ]
+        );
 
-        // Guru 2 (Contoh tambahan)
-        User::create([
-            'name' => 'Tri Kusumawati',
-            'email' => 'Tri@sekolah.id',
-            'password' => Hash::make('4321'),
-            'role' => 'guru',
-        ]);
-        
+        User::updateOrCreate(
+            ['email' => 'tri@sekolah.id'],
+            [
+                'name' => 'Tri Kusumawati',
+                'password' => Hash::make('4321'),
+                'role' => 'guru',
+            ]
+        );
     }
 }

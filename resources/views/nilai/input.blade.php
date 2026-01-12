@@ -34,7 +34,7 @@
                 </a>
 
                 <a href="{{ route('nilai.mapel', $id_kelas) }}" 
-                   class="bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-4 py-2 rounded-full text-sm font-medium shadow-sm transition-all flex items-center">
+                   class="bg-white  border-gray-300 text-purple-600 hover:bg-gray-100 px-4 py-2 rounded-full text-sm font-medium shadow-sm transition-all flex items-center">
                     <i class="fas fa-arrow-left mr-2"></i> Kembali
                 </a>
             </div>
@@ -133,7 +133,7 @@
                 </div>
 
                 <div class="bg-gray-50 px-6 py-6 border-t border-gray-100 flex justify-end">
-                    <button type="submit" class="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-xl shadow-md transition duration-300 transform hover:-translate-y-1 flex justify-center items-center">
+                    <button type="submit" class="w-full md:w-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-xl shadow-md transition duration-300 transform hover:-translate-y-1 flex justify-center items-center">
                         <i class="fas fa-save mr-2"></i> Simpan Nilai {{ $mapel }}
                     </button>
                 </div>

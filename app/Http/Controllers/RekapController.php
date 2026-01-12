@@ -6,7 +6,6 @@ use App\Models\Siswa;
 use App\Models\Nilai;
 use App\Models\Absensi;
 use App\Models\Mapel; // JANGAN LUPA IMPORT INI
-use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
 
 class RekapController extends Controller

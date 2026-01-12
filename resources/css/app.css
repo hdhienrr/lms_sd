@@ -5,41 +5,47 @@
 @layer components {
 
     /* =========================================
-       1. GLOBAL SETUP
+    1. GLOBAL SETUP
        ========================================= */
     body {
-        background-color: #f8f9fa; /* Abu-abu sangat muda */
-        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tambah Poppins biar modern */
+        background-color: #f8f9fa;
+        /* Abu-abu sangat muda */
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* Tambah Poppins biar modern */
         min-height: 100vh;
         display: flex;
         flex-direction: column;
     }
 
     main {
-        flex: 1; /* Mendorong footer ke bawah */
+        flex: 1;
+        
     }
 
     /* =========================================
-       2. NAVBAR STYLING
+    2. NAVBAR STYLING
        ========================================= */
     .navbar {
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Bayangan halus */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Bayangan halus */
         background-color: white;
     }
 
     .navbar-brand span {
         font-weight: 700;
         letter-spacing: 0.5px;
-        color: #6a35c9; /* Ungu Gelap untuk Text Logo */
+        color: #6a35c9;
+        
     }
 
     /* =========================================
-       3. CARD KELAS (TEMA UNGU)
+    3. CARD KELAS (TEMA UNGU)
        ========================================= */
     .class-card {
         transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
         border: none;
-        border-radius: 20px; /* Lebih bulat sesuai desain gambar */
+        border-radius: 20px;
+        
         cursor: pointer;
         text-decoration: none;
         color: inherit;
@@ -49,25 +55,24 @@
     }
 
     .class-card:hover {
-        transform: translateY(-5px); 
-        box-shadow: 0 10px 25px rgba(140, 82, 255, 0.2); /* Bayangan Ungu Halus */
-        background-color: #f3e8ff; /* Ubah jadi Ungu Sangat Muda saat hover */
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(140, 82, 255, 0.2);
+        background-color: #f3e8ff;
     }
 
-    /* Ikon besar di dalam card */
     .icon-large {
         font-size: 3rem;
-        color: #8c52ff; /* Ubah Biru jadi UNGU UTAMA */
+        color: #8c52ff;
         transition: transform 0.3s;
     }
 
     .class-card:hover .icon-large {
         transform: scale(1.1);
-        color: #6a35c9; /* Ungu lebih gelap saat hover */
+        color: #6a35c9;
     }
 
     /* =========================================
-       4. FOOTER STYLING
+    4. FOOTER STYLING
        ========================================= */
     footer {
         background-color: #ffffff;
@@ -76,21 +81,22 @@
     }
 
     /* =========================================
-       5. HALAMAN LOGIN (TEMA UNGU)
+    5. HALAMAN LOGIN (TEMA UNGU)
        ========================================= */
     body.login-page {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
-        background-color: #f3f4f6; /* Sedikit lebih gelap dari putih */
+        background-color: #f3f4f6;
+        /* Sedikit lebih gelap dari putih */
     }
 
     /* Card Login Custom */
     .card-login {
         border: none;
-        border-radius: 20px; /* Sudut lebih bulat */
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
 
@@ -105,7 +111,8 @@
 
     /* Tombol Login UNGU */
     .btn-login {
-        background-color: #8c52ff; /* Ungu Utama */
+        background-color: #8c52ff;
+        /* Ungu Utama */
         border: none;
         padding: 12px;
         font-size: 16px;
@@ -117,16 +124,18 @@
     }
 
     .btn-login:hover {
-        background-color: #6a35c9; /* Ungu Gelap */
+        background-color: #6a35c9;
+        /* Ungu Gelap */
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(140, 82, 255, 0.4); /* Glow Ungu */
+        box-shadow: 0 5px 15px rgba(140, 82, 255, 0.4);
+        /* Glow Ungu */
     }
-    
+
     /* Helper untuk teks ungu */
     .text-primary-custom {
         color: #8c52ff !important;
     }
-    
+
     .text-primary-custom:hover {
         color: #6a35c9 !important;
         text-decoration: underline;
@@ -155,7 +164,7 @@
     }
 
     .landing-navbar .nav-link {
-        color: rgba(255,255,255,0.9) !important;
+        color: rgba(255, 255, 255, 0.9) !important;
         font-weight: 600;
         margin-left: 20px;
     }
@@ -176,7 +185,7 @@
         background: white;
         border-radius: 20px;
         padding: 30px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
         transition: transform 0.3s;
         text-align: center;
         height: 100%;
