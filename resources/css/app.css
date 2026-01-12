@@ -208,3 +208,106 @@
         margin-right: auto;
     }
 }
+
+.sticky-col {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    border-right: 2px solid #8c52ff !important;
+    box-shadow: 4px 0 5px -2px rgba(0,0,0,0.05); 
+}
+
+/* Fix: Header sticky butuh z-index lebih tinggi */
+thead th.sticky-col {
+    z-index: 25 !important; 
+}
+
+/* Fix: Bayangan untuk header */
+thead.sticky-top th {
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 2. Table Hover Effects */
+.table-hover tbody tr:hover td.sticky-col {
+    background-color: #fff;
+    color: #000;
+}
+.table-hover tbody tr:hover td {
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* 3. Utility Classes */
+.small-header {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.transition-cell {
+    transition: all 0.3s ease;
+}
+
+/* 4. Button Animations */
+.hover-lift {
+    transition: transform 0.2s;
+}
+.hover-lift:hover {
+    transform: translateY(-3px);
+}
+.hover-shadow {
+    transition: all 0.2s;
+}
+.hover-shadow:hover {
+    background-color: #8c52ff;
+    border-color: #8c52ff;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+/* 5. Custom Scrollbar */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 4px;
+}
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #aaa; 
+}
+
+:root {
+    /* Warna Ungu Utama (Matching Navbar) */
+    --color-theme: #9333ea;       /* Purple 600 */
+    --color-theme-dark: #7e22ce;  /* Purple 700 */
+    --color-theme-light: #f3e8ff; /* Purple 100 (Subtle) */
+}
+
+/* 1. Background Gradient untuk Header Tabel */
+.bg-purple-gradient {
+    background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%) !important;
+    color: white;
+}
+
+/* 2. Text Color */
+.text-purple-theme {
+    color: var(--color-theme) !important;
+}
+
+/* 3. Badge/Label Background */
+.bg-purple-subtle {
+    background-color: var(--color-theme-light) !important;
+    color: var(--color-theme-dark) !important;
+}
+
+/* 4. Button Custom (Outline Purple) */
+.btn-outline-purple {
+    color: var(--color-theme);
+    border-color: var(--color-theme);
+}
+.btn-outline-purple:hover {
+    background-color: var(--color-theme);
+    color: white;
+}   

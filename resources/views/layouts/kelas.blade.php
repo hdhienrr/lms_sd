@@ -1,13 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    {{-- HEADER NAVIGASI KELAS (Sticky Top) --}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <div class="bg-white shadow-sm border-b border-gray-200 mb-6 sticky top-0 z-30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center py-3 gap-4">
 
-                {{-- BAGIAN KIRI: Tombol Kembali & Judul --}}
                 <div class="flex items-center w-full md:w-auto">
                     {{-- Tombol Kembali --}}
                     <a href="{{ route('dashboard') }}" 
