@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Nilai extends Model
 {
-    protected $guarded = ['id']; // Semua kolom boleh diisi
+    protected $guarded = ['id']; 
 
     public function siswa() {
         return $this->belongsTo(Siswa::class);

@@ -11,7 +11,7 @@
                 <div class="flex items-center w-full md:w-auto">
                     {{-- Tombol Kembali --}}
                     <a href="{{ route('dashboard') }}" 
-                       class="group flex items-center px-4 py-2 bg-white border border-gray-300 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors mr-5">
+                       class="group flex items-center px-4 py-2 bg-white border border-gray-300 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text--600 transition-colors mr-5">
                         <i class="fas fa-arrow-left mr-2 text-xs group-hover:-translate-x-1 transition-transform"></i> 
                         Kembali
                     </a>
@@ -33,9 +33,9 @@
                         <a href="{{ route('kelas.show', $id_kelas) }}" 
                            class="px-4 py-2 rounded-full text-sm font-medium flex items-center transition-all whitespace-nowrap
                            {{ Request::routeIs('kelas.show') || Request::is('kelas/*/dashboard')
-                              ? 'bg-white text-blue-600 shadow-sm ring-1 ring-black/5' 
+                              ? 'bg-white text-purple-600 shadow-sm ring-1 ring-black/5' 
                               : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50' }}">
-                            <i class="fas fa-tachometer-alt mr-2 {{ Request::routeIs('kelas.show') ? 'text-blue-500' : 'text-gray-400' }}"></i> 
+                            <i class="fas fa-tachometer-alt mr-2 {{ Request::routeIs('kelas.show') ? 'text-purple-500' : 'text-gray-400' }}"></i> 
                             Dashboard
                         </a>
 
@@ -43,9 +43,9 @@
                         <a href="{{ route('absensi.index', $id_kelas) }}" 
                            class="px-4 py-2 rounded-full text-sm font-medium flex items-center transition-all whitespace-nowrap
                            {{ Request::is('kelas/*/absensi*') 
-                              ? 'bg-white text-blue-600 shadow-sm ring-1 ring-black/5' 
+                              ? 'bg-white text-purple-500 shadow-sm ring-1 ring-black/5' 
                               : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50' }}">
-                            <i class="fas fa-calendar-check mr-2 {{ Request::is('kelas/*/absensi*') ? 'text-blue-500' : 'text-gray-400' }}"></i> 
+                            <i class="fas fa-calendar-check mr-2 {{ Request::is('kelas/*/absensi*') ? 'text-purple-500' : 'text-gray-400' }}"></i> 
                             Absensi
                         </a>
 
@@ -53,9 +53,9 @@
                         <a href="{{ route('materi.index', request()->segment(2)) }}" 
                            class="px-4 py-2 rounded-full text-sm font-medium flex items-center transition-all whitespace-nowrap
                            {{ Request::is('kelas/*/materi*') 
-                              ? 'bg-white text-blue-600 shadow-sm ring-1 ring-black/5' 
+                              ? 'bg-white text-purple-600 shadow-sm ring-1 ring-black/5' 
                               : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50' }}">
-                            <i class="fas fa-book mr-2 {{ Request::is('kelas/*/materi*') ? 'text-blue-500' : 'text-gray-400' }}"></i> 
+                            <i class="fas fa-book mr-2 {{ Request::is('kelas/*/materi*') ? 'text-purple-500' : 'text-gray-400' }}"></i> 
                             Materi
                         </a>
 
@@ -63,9 +63,9 @@
                         <a href="{{ route('nilai.mapel', $id_kelas) }}" 
                            class="px-4 py-2 rounded-full text-sm font-medium flex items-center transition-all whitespace-nowrap
                            {{ Request::is('kelas/*/nilai*') 
-                              ? 'bg-white text-blue-600 shadow-sm ring-1 ring-black/5' 
+                              ? 'bg-white text-purple-600 shadow-sm ring-1 ring-black/5' 
                               : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50' }}">
-                            <i class="fas fa-trophy mr-2 {{ Request::is('kelas/*/nilai*') ? 'text-blue-500' : 'text-gray-400' }}"></i> 
+                            <i class="fas fa-trophy mr-2 {{ Request::is('kelas/*/nilai*') ? 'text-purple-500' : 'text-gray-400' }}"></i> 
                             Nilai
                         </a>
 

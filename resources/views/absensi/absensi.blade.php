@@ -29,7 +29,7 @@
         <div class="bg-gray-50 px-6 py-5 border-b border-gray-100 flex flex-col sm:flex-row justify-between items-center gap-4">
             <div>
                 <h5 class="text-xl font-bold text-gray-800 flex items-center">
-                    <i class="fas fa-clipboard-list text-blue-500 mr-2"></i> Absensi Harian
+                    <i class="fas fa-clipboard-list text-purple-500 mr-2"></i> Absensi Harian
                 </h5>
                 <p class="text-sm text-gray-500 mt-1">
                     <i class="far fa-calendar-alt mr-1"></i> {{ now()->translatedFormat('l, d F Y') }}
@@ -125,7 +125,7 @@
                     {{-- FOOTER: Tombol Simpan --}}
                     <div class="bg-gray-50 px-6 py-4 border-t border-gray-100">
                         <button type="submit" 
-                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-md transition duration-300 transform hover:-translate-y-1 flex justify-center items-center">
+                                class="w-full bg-purple-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-md transition duration-300 transform hover:-translate-y-1 flex justify-center items-center">
                             <i class="fas fa-save mr-2"></i> Simpan Absensi Hari Ini
                         </button>
                     </div>

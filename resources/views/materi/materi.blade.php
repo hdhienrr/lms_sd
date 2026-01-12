@@ -6,7 +6,7 @@
     <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
         <div>
             <h2 class="text-3xl font-bold text-gray-800 flex items-center">
-                <i class="fas fa-video text-red-500 mr-3"></i> Materi & Video Pembelajaran
+                <i class="fas fa-video text-purple-500 mr-3"></i> Materi & Video Pembelajaran
             </h2>
             <p class="text-gray-500 mt-1">Tonton video pembelajaran untuk memperdalam pemahaman.</p>
         </div>
@@ -23,8 +23,8 @@
     {{-- EMPTY STATE (Jika belum ada materi) --}}
     @if($materis->isEmpty())
         <div class="text-center py-20 bg-white rounded-3xl border border-dashed border-gray-300">
-            <div class="bg-red-50 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-film text-red-400 text-4xl"></i>
+            <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-film text-black text-4xl"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-800">Belum ada materi video</h3>
             <p class="text-gray-500 mt-2">Admin belum mengunggah materi untuk kelas ini.</p>

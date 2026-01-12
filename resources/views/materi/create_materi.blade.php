@@ -17,7 +17,7 @@
                     </div>
                     <div>
                         <h2 class="text-xl font-bold text-gray-800 leading-tight">Tambah Video Materi</h2>
-                        <p class="text-sm text-red-500 font-medium">Masukkan link YouTube pembelajaran</p>
+                        <p class="text-sm text-black font-medium">Masukkan link YouTube pembelajaran</p>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@
                                 Batal
                             </a>
                             <button type="submit"
-                                class="px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5 flex items-center justify-center">
+                                class="px-6 py-3.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5 flex items-center justify-center">
                                 <i class="fas fa-save mr-2"></i> Simpan Video
                             </button>
                         </div>
