@@ -83,7 +83,8 @@
                 <div>
                     <h3 class="text-white font-semibold mb-4">Bantuan</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">• Hubungi Kami</a></li>
+                        <li><a href="https://wa.me/6281357653791?text=Halo%20saya%20ingin%20bertanya%20terkait%20E-Learning%20SD." class="hover:text-white transition">• Kirim pesan WhatsApp</a></li>
+                        <li><a href="mailto:nuradi440@gmail.com?subject=Bantuan%20E-Learning%20SD&body=Halo,%20saya%20ingin%20bertanya%20terkait%20E-Learning%20SD.">• Kirim Email</li>
                     </ul>
                 </div>
                 <div>
