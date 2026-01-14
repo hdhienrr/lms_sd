@@ -85,7 +85,7 @@
                 </div>
             </div>
 
-            <a href="https://wa.me/081357653791" <button
+            <a href="https://wa.me/6281357653791?text=Halo%20saya%20ingin%20bertanya%20terkait%20E-Learning%20SD." <button
                 class="bg-white text-indigo-600 px-8 py-3 rounded-xl font-bold shadow-md hover:bg-gray-50 transition flex items-center gap-2">
                 <i class="far fa-comment-alt"></i> Hubungi
 
